@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_000743) do
+ActiveRecord::Schema.define(version: 2019_03_18_173423) do
 
   create_table "walk_section_buttons", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "button_type"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2019_03_18_000743) do
 
   create_table "walk_sections", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "image"
-    t.text "description"
+    t.text "name"
     t.bigint "walk_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
