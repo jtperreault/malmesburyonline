@@ -4,4 +4,6 @@ class Walk < ApplicationRecord
 
     validates_uniqueness_of :name, :description
     auto_strip_attributes   :name, :description
+
+    has_many :walk_sections
 end
