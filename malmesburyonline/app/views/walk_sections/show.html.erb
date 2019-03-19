@@ -1,3 +1,6 @@
 <h1><%= @walk_section.name %></h1>
 
 <%= image_tag 'walks/' + @walk_section.image, style: 'height:auto; width: 50%;' %>
+<% @walk_section.walk_section_buttons.each do |ws| %>
+  <%= link_to ws.button_text, walk_walk_section_path(ws.next_walk_section_id) %>
+<% end %>
