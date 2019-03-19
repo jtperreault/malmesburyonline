@@ -1,0 +1,13 @@
+
+<h1><%= @walk[0]["name"] %></h1>
+
+<% @walk_section.each do |ws| %>
+
+  <%= image_tag 'walks/' +  ws.image, style: 'height:auto;width:50%;' %>
+
+<% end %>
+
+<% @walk_section_buttons.each do |wsb| %>
+   <a href="<%= @base_url %>/<%= wsb.next_walk_section_id %>"><%= wsb.button_text %></a>   
+<% end %>
+
