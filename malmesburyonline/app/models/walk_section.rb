@@ -1,5 +1,6 @@
 class WalkSection < ApplicationRecord
   belongs_to :walk
+  has_many :walk_section_buttons
 
 #  has_many :sectin_button, foreign_key: "next_walk_section_id"
 #  has_many :sectin_button, foreign_key: "walk_section_id"
